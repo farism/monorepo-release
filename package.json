@@ -12,7 +12,8 @@
   "scripts": {
     "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0",
     "commit": "commit",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "precommit": "lerna run lint-staged"
   },
   "workspaces": [
     "packages/*"
